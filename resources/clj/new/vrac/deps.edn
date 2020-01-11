@@ -1,0 +1,21 @@
+{:paths ["src/main" "resources"]
+ :deps {org.clojure/core.async {:mvn/version "0.7.559"}
+        vrac {:git/url "https://github.com/green-coder/vrac.git"
+              :sha "ebd620fb766d64e6597eb51de71e741b85fea686"}
+
+        ; To fetch data from remote servers
+        clj-http {:mvn/version "3.10.0"}
+        cljs-http {:mvn/version "0.1.46"}}
+
+ :aliases {:dev {:extra-deps {org.clojure/clojure {:mvn/version "1.10.1"}
+                              org.clojure/clojurescript {:mvn/version "1.10.597"}
+                              thheller/shadow-cljs {:mvn/version "2.8.83"}
+                              binaryage/devtools {:mvn/version "0.9.11"}}}
+           :test {:extra-paths ["src/test"]}
+
+           ; clojure -A:outdated --update
+           :outdated {:extra-deps {olical/depot {:mvn/version "1.8.4"}}
+                      :main-opts ["-m" "depot.outdated.main"]}}}
+
+; To run ClojureScript, edit shadow-cljs.edn and run:
+; shadow-cljs watch main

@@ -1,0 +1,12 @@
+{
+  "name": "{{name}}",
+  "version": "0.0.1-SNAPSHOT",
+  "description": "A Vrac project from the future.",
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "shadow-cljs": "^2.8.57"
+  }
+}

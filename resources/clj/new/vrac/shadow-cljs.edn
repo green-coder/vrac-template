@@ -1,0 +1,11 @@
+{:deps     {:aliases [:dev]}
+ :nrepl    {:port 9000}
+ :dev-http {8000 {:root "resources/public"}}
+ :builds   {:main {:target     :browser
+                   :output-dir "resources/public/js/main"
+                   :asset-path "/js/main"
+                   :modules    {:main {:entries [{{namespace}}.core]
+                                       :init-fn {{namespace}}.core/init!}}
+                   :devtools   {:after-load {{namespace}}.core/reload!}}}}
+
+; Start REPL on port 9000, then (shadow/repl :main)
