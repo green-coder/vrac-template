@@ -43,4 +43,4 @@ In case of problems during your setup, please consult
 ## Resources
 
 - The [Vrac](https://github.com/green-coder/vrac) library
-- The #vrac channel on [Slack](https://clojurians.slack.com)
+- The #vrac channel on [Slack](https://clojurians.slack.com/archives/CNTUMRQ9F)
