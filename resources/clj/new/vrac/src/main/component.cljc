@@ -1,7 +1,6 @@
 (ns {{namespace}}.component
   (:require [{{namespace}}.data :as data]
-            #?(:clj [vrac.core :as v :refer [defc]]
-               :cljs [vrac.core :as v :refer-macros [defc]])))
+            [vrac.core :as v :refer [defc]]))
 
 (defc user-comp [user]
   {:id :app/user}
